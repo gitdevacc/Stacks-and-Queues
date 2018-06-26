@@ -25,5 +25,5 @@ class Stacks:
     def size(self):
         return len(self.nodes)
     def __str__(self):
-        return self.nodes
+        return [str(element) for element in self]
     

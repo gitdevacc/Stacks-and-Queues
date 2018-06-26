@@ -17,16 +17,16 @@ class Stack_Math(Stacks):
     def product(self):
         product=1
         for element in self.nodes:
-            product=product*element
+            product*=element
         return product
     def mean(self):
         return (self.total()/self.size())
     def max_e(self):
-        a=self.nodes.sort()
-        return a.pop()
+        self.nodes.sort()
+        return self.nodes[-1]
     def min_e(self):
-        a=self.nodes.sort()
-        return a[0]
+        self.nodes.sort()
+        return self.nodes[0]
     def print_all(self):
         print('Total count=', self.size())
         print('Sum=', self.total())
