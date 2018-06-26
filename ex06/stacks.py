@@ -1,4 +1,3 @@
-
 class Stacks:
     def __init__(self): 
             self.nodes=[]
@@ -20,9 +19,5 @@ class Stacks:
     def size(self):
         return len(self.nodes)
     def __str__(self):
-        a=[]
-        b=self.nodes
-        while b.pop()==True:
-            a.append(b.pop())
-        return str(a)
+        return [str(element) for element in self.nodes]
     

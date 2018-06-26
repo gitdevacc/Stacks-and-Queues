@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun 22 18:00:39 2018
 
-@author: Li Wende
-"""
 class Stacks:
     def __init__(self): 
             self.nodes=[]
@@ -25,5 +20,9 @@ class Stacks:
     def size(self):
         return len(self.nodes)
     def __str__(self):
-        return [str(element) for element in self]
+        a=[]
+        b=self.nodes
+        while b.pop()==True:
+            a.append(b.pop())
+        return str(a)
     

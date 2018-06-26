@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun 22 18:18:13 2018
 
-@author: Li Wende
-"""
 from stacks import Stacks
 class Stack_Math(Stacks):
     def __init__(self):
